@@ -10,7 +10,7 @@ body {
   height: 100%;
   margin: 50px 250px;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #F2f2f2;
   line-height: 1.4;
   font-family: 'Inclusive Sans', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
@@ -24,7 +24,7 @@ body {
   }
 
 p {
-    color: #ffffff;
+    color: #f2f2f2;
     font-size: 18px;
     
 }
