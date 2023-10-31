@@ -50,6 +50,23 @@ section.second {
 
 /* third section */
 
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 2em;
+}
+
+.image-container{
+    grid-column: 3 / span 3;
+    grid-row: 3 / span 2;
+}
+
+.image-container img{
+    max-width: 100%;
+    height: auto;
+}
+
 section.third {
     height: 100vh;
     display: flex;
@@ -59,7 +76,22 @@ section.third {
 }
 
 
-/* typography */
+.card-wrapper{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+
+.card-wrapper img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.content-container{
+    color: black;
+}
 
 h1 {
     font-size: 11vw;
