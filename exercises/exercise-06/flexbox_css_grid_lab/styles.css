@@ -17,7 +17,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    margin: 20px;
+    margin: 20px; 
     border: 2px solid red;
 }
 
@@ -47,7 +47,7 @@ h3 {
 
 .flex-layout {
     display: flex;
-    /* border: 2px solid green; */
+    border: 2px solid green;
 }
 
 .image-container, 
