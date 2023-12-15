@@ -1,7 +1,5 @@
-console.log('this worked');
-
-
-const projects = [
+document.addEventListener('DOMContentLoaded', () => {
+const catalog = [
     {
         name: "Centro Cultural Internacional Oscar Niemeyer",
         architect: "Oscar Niemeyer",
@@ -9,7 +7,7 @@ const projects = [
         year: "2011",
         location: "Spain",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/7951c33e-d54b-480d-9246-32e26b3f25b2"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/6498753c-eaeb-481a-a61e-b0808fa844cc"
     },
     {
         name: "Catedral de Brasilia",
@@ -18,7 +16,7 @@ const projects = [
         year: "1970",
         location: "Brazil",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/e53dd9ae-e8f3-4ae1-a55c-4b204bbe6bcd"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/f24356c2-494c-4598-b2ef-19d52d88188f"
     },
     {
         name: "Museo de Arte Contemporaneo de Niteroi",
@@ -27,7 +25,7 @@ const projects = [
         year: "1996",
         location: "Brazil",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/63ec7145-ed93-4dfe-8ea5-e98603f9cd24"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/769bda14-b567-4a54-af4f-c6e26a827ff2"
     },
     {
         name: "Congreso Nacional del Brasil",
@@ -36,7 +34,7 @@ const projects = [
         year: "2006",
         location: "Brazil",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/9611c42d-6a9a-4e2b-947f-521fa966ed91"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/53944e8a-4c6f-402a-b076-43dd22689083"
     },
     {
         name: "Palacio Da Alvorada",
@@ -45,16 +43,16 @@ const projects = [
         year: "1958",
         location: "Brazil",
         type: "Residential",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/f79f7b29-f5ea-4705-84c2-d59f628711f7"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/439c6104-3491-4602-b5be-308c3668f20c"
     },
     {
         name: "Biblioteca Nacional Mariano Moreno",
         architect: "Clorindo Testa",
-        nationality: "Argentino",
+        nationality: "Argentina",
         year: "1991",
         location: "Argentina",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/ac661d44-174e-4436-9e7f-851464f69326"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/da22f76b-1f83-487a-9b5e-1dff2665621b"
     },
     {
         name: "IBM Buildiding",
@@ -63,7 +61,7 @@ const projects = [
         year: "1979",
         location: "Argentina",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/50f08d7f-c569-437d-a834-039f13fb484d"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/023abd6f-258e-4bdd-b671-80037bce7b38"
     },
     {
         name: "SOMISA Building",
@@ -72,7 +70,7 @@ const projects = [
         year: "1977",
         location: "Argentina",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/9cce30c0-b6a8-478c-89f4-633c8acf2101"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/0fc51c32-b7d4-4023-8c8e-d657b248393b"
     },
     {
         name: "Casa del Puente",
@@ -81,7 +79,7 @@ const projects = [
         year: "1946",
         location: "Argentina",
         type: "Residencial",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/2aa9ff80-1117-4e07-a1d3-d237086c570b"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/a6e90d1f-049e-490f-93d4-7c69da24280f"
     },
     {
         name: "Quinta Monroy Housing",
@@ -90,7 +88,7 @@ const projects = [
         year: "2003",
         location: "Chile",
         type: "Residencial",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/8551108d-8c77-45ab-98a1-cf74a73bc809"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/6e30626b-073f-4386-93ab-1b2cd169b032"
     },
     {
         name: "Torres Siamesas",
@@ -99,7 +97,7 @@ const projects = [
         year: "2003",
         location: "Chile",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/51d0b66d-d761-427c-bb30-48476d6865af"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/e3b36c94-3261-41dd-b6ae-28e00edc351e"
     },
     {
         name: "Villa Verde Housing",
@@ -108,7 +106,7 @@ const projects = [
         year: "2010",
         location: "Chile",
         type: "Residencial",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/73e3483b-5499-4eca-8946-b7640d9f3497"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/bae164e1-f22d-4093-8054-34fdcb5640db"
     },
     {
         name: "Glass House",
@@ -117,7 +115,7 @@ const projects = [
         year: "1950",
         location: "Brazil",
         type: "Residential",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/b7aaba17-9dc9-413c-b88a-a6fdb7d25638"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/f7df74d2-9cf1-443a-be93-bea865783fff"
     },
     {
         name: "SESC Pompeia",
@@ -126,7 +124,7 @@ const projects = [
         year: "1986",
         location: "Brazil",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/e6b0d342-3184-45fc-9f58-bc1ab4e2bd38"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/8b3c68cd-9651-4706-92ac-4c23631033c2"
     },
     {
         name: "Casa Luis Barragan",
@@ -308,41 +306,128 @@ const projects = [
         type: "Residential",
         image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/154aacd8-01da-42c3-a214-5a556c03baf5"
     },
-]
+];
+
+console.log(catalog.length);
+
+const container = document.getElementById('catalog');
+const maxColumns = 6; // Match this with the number of columns set in CSS
+const maxRows = 6;
+
+if (container) {
+    catalog.forEach(card => {
+        const cardElement = createCardElement(card);
+        // Assign random positions within the grid
+        cardElement.style.gridColumnStart = getRandomInt(1, maxColumns);
+        cardElement.style.gridRowStart = getRandomInt(1, maxRows);
+        cardElement.querySelector('.project-image').addEventListener('load', () => {
+            container.appendChild(cardElement);
+        });
+    });
+
+} else {
+    console.error("Container element not found!");
+}
+});
 
 
-//grab the ul
-const ul = document.querySelector('.items'); 
+    // Select project items
+    const cards = document.querySelectorAll(".project-item");
 
-//write function to render flowers to page
-const renderProjectsToPage = (items) => {
-    for(let i = 0; i < items.length; i++){
-        console.log(items[i]);
+    // Add data-categories attribute to project items based on nationality
+    cards.forEach(card => {
+        console.log(card);
+        const nationality = card.getAttribute("data-nationality");
+        card.setAttribute("data-categories", nationality);
+    });
 
+    // Select filter buttons
+    const filterBtns = document.querySelectorAll(".filter-btn");
+
+    // Add click event listener to each filter button
+    filterBtns.forEach(btn => {
+        btn.addEventListener("click", function () {
+            // Remove "active" class from all filter buttons
+            filterBtns.forEach(btn => btn.classList.remove("active"));
+
+            // Add "active" class to the clicked filter button
+            this.classList.add("active");
+
+            // Get the filter value from the data attribute
+            const filterValue = this.getAttribute("data-filter");
+            console.log(filterValue);
+
+            // Filter project items based on the selected category
+            // cards.forEach(card => {
+            //     console.log(card);
+            //     const categories = card.getAttribute("data-categories").split(" ");
+            //     console.log(categories);
+                // if (filterValue === "all" || categories.includes(filterValue)) {
+                //     card.style.display = "block";
+                // } else {
+                //     card.style.display = "none";
+                // }
+            // });
+            for (let i = 0; i < cards.length; i++) {  
+                if (cards[i].classList.contains(filterValue) || filterValue === "all") {
+                    cards[i].classList.remove("hide");
+                    cards[i].classList.add("show");
+                 }
+            }
+        });
+    });
+
+
+
+function createCardElement (project) {
         //create list item 
-        let list_item = document.createElement("li");
-        //flower name
-        let title = document.createElement("h4");
-        title.textContent = projects[i].name;
-        // // flower color
-        // let color = document.createElement("p");
-        // color.textContent = flowers[i].color;
-        //image 
-        let image = document.createElement("img");
-        image.setAttribute("src", projects[i].image);
-        let subtitle = document.createElement("h6");
-        subtitle.textContent = projects[i].architect;
+        const card = document.createElement("div");
+        card.classList.add('project-item');
+        card.setAttribute("data-nationality", project.nationality);
+        
+        // //add title
+        // let title = document.createElement("h4");
+        // title.textContent = project.name;
+        // card.appendChild(title);
+     
+        //add image 
+        const image = document.createElement("img");
+        image.classList.add('project-image');
+        image.src = project.image;
+        card.appendChild(image);
+        
 
-        //append to page
-        ul.appendChild(list_item)
-        list_item.appendChild(title)
-        // list_item.appendChild(color)
-        list_item.appendChild(image)
-    }
+        // // add subtitle
+        // const subtitle = document.createElement("h6");
+        // subtitle.textContent = project.architect;
+        // card.appendChild(subtitle);
+
+
+        return card;
+}
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
-//pass data into it
-renderProjectsToPage(projects)
 
 
+
+
+  // expand images with info
+
+// var btn = document.getElementById('modalBtn');
+// var modal = document.querySelector('.wrapperEl');
+// var span = document.querySelector('.closeBtn');
+
+// btn.addEventListener('click', function(e){
+//   e.preventDefault();
+  
+//   modal.style.display = "block";
+// });
+
+// span.addEventListener('click', function(e){
+//   e.preventDefault();
+  
+//   modal.style.display = "none";
+// })
