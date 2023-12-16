@@ -133,7 +133,7 @@ const catalog = [
         year: "1948",
         location: "Mexico",
         type: "Residential",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/127e3d28-8017-43a8-9844-9a1a8733926d"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/5be254ab-a7b9-44f4-b92d-36b486743666"
     },
     {
         name: "Casa Gilardi",
@@ -142,7 +142,7 @@ const catalog = [
         year: "1976",
         location: "Mexico",
         type: "Residencial",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/20070544-072d-41bf-b14b-b1bbe46a3124"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/ce447dc5-df61-4fc5-95d4-23779013233a"
     },
     {
         name: "Iglesia de Atlántida Cristo Obrero",
@@ -151,7 +151,7 @@ const catalog = [
         year: "1960",
         location: "Uruguay",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/8a101c21-e502-42ae-be96-630a74fcbbfd"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/72e96bcc-7209-4f55-a5ae-7bb65a572405"
     },
     {
         name: "Iglesia de San Pedro",
@@ -160,7 +160,7 @@ const catalog = [
         year: "1967",
         location: "Uruguay",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/dfd5e8f0-5d09-4bd6-9fa2-fff4acff2ed3"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/60a70c52-4745-48ea-b87f-f69a3740e299"
     },
     {
         name: "Terminal Municipal de Ómnibus",
@@ -169,7 +169,7 @@ const catalog = [
         year: "1973",
         location: "Uruguay",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/a17d7b60-9eb2-4fca-805c-e8f85e9bcf6d"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/8ca4a5df-7378-449c-9d5a-4af580ed598a"
     },
     {
         name: "Gimnasio polideportivo",
@@ -178,16 +178,16 @@ const catalog = [
         year: "1974",
         location: "Uruguay",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/4f0c55ff-756c-4708-9af5-64088f744914"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/61439a45-3a25-4db0-ba33-be4587bfa579"
     },
     {
         name: "São Paulo Museum of Art (MASP)",
-        architect: "lina Bo bardi",
+        architect: "Lina Bo bardi",
         nationality: "Brazil",
         year: "1947",
         location: "Brazil",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/74a62e0e-0f81-4a37-b12b-5955eea77c43"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/538ad58c-cbe2-40a3-8092-16698768d432"
     },
     {
         name: "Torre UniCredit",
@@ -196,7 +196,7 @@ const catalog = [
         year: "2012",
         location: "Italy",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/bcfb623d-8a51-407e-ac27-369f9b5b18ae"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/1c318b78-c438-475e-92ec-16820dbf4a22"
     },
     {
         name: "Torre Iberdrola",
@@ -205,7 +205,7 @@ const catalog = [
         year: "2011",
         location: "Spain",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/5bc6abeb-7795-4712-a433-9dd8ef822834"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/59ee5a6e-cc15-49b0-8688-8e8ecea5431e"
     },
     {
         name: "Torre Macro",
@@ -214,7 +214,7 @@ const catalog = [
         year: "2018",
         location: "Argentina",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/2bf9dc79-b01e-49a5-9ef6-ab87a5d66f55"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/be0f0b8f-cf6e-4d69-8141-d6b9adab0e3c"
     },
     {
         name: "Torres Petronas",
@@ -223,7 +223,7 @@ const catalog = [
         year: "1998",
         location: "Malaysia",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/34623fb2-ffca-4341-81e8-f235b0b88925"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/0eeb4eb1-eb90-436b-b340-f674eb1af3b5"
     },
     {
         name: "Tokyo International Forum",
@@ -232,7 +232,7 @@ const catalog = [
         year: "1997",
         location: "Japan",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/f70aa4df-653f-42e0-a055-6cbf3ce79095"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/55dee458-f95a-49ba-8ece-08e856c1f7a1"
     },
     {
         name: "432 Park Avenue Condominiums",
@@ -241,7 +241,7 @@ const catalog = [
         year: "2012",
         location: "United States",
         type: "Residential",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/44960410-5925-4532-a78b-aee9cb17efd2"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/b8ab1f77-6f74-4054-92ba-5428bc7af005"
     },
     {
         name: "Carrasco International Airport",
@@ -250,7 +250,7 @@ const catalog = [
         year: "2009",
         location: "Uruguay",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/bf5e526a-54e0-489c-b681-5176b466438d"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/b9bdae4c-105e-40f3-8fe8-092b6ec89309"
     },
     {
         name: "20 Fenchurch Street",
@@ -259,7 +259,7 @@ const catalog = [
         year: "2014",
         location: "London",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/e944fa5e-d243-46a8-940c-bd6c817ba430"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/737b519b-21c1-4c8f-bf86-670d42df0a2a"
     },
     {
         name: "Hotel Camino Real CDMX",
@@ -268,7 +268,7 @@ const catalog = [
         year: "1968",
         location: "Mexico",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/0fc39c40-d28d-4e76-b271-58ddfba09a9b"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/75667770-f9ab-4576-bd20-9f4a078c2922"
     },
     {
         name: "Cortés Sea Research Center",
@@ -277,7 +277,7 @@ const catalog = [
         year: "2023",
         location: "Mexico",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/067c835c-8a4b-41fe-beec-5d1fda45abb8"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/5352d67c-27ca-4b25-b99f-b38691af6e24"
     },
     {
         name: "Los Terrenos",
@@ -286,7 +286,7 @@ const catalog = [
         year: "2016",
         location: "Mexico",
         type: "Residential",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/d0363242-5f8d-48c1-a9ad-eac4b0c957f5"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/36fc66fc-de32-4735-a2b9-e440ddd3dbc3"
     },
     {
         name: "Bioinnova",
@@ -295,7 +295,7 @@ const catalog = [
         year: "2012",
         location: "Mexico",
         type: "Institutional",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/b522fb7f-e5d8-45cd-9802-d6baf59a7876"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/e95db4d3-7ff4-4d15-a4e4-3cfeb6ad1dbe"
     },
     {
         name: "Ajijic",
@@ -304,7 +304,7 @@ const catalog = [
         year: "2010",
         location: "Mexico",
         type: "Residential",
-        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/154aacd8-01da-42c3-a214-5a556c03baf5"
+        image: "https://github.com/CandelariaGassiebayle/literate-umbrella/assets/144853643/90b9b854-151f-4ce8-af48-61603127ab61"
     },
 ];
 
@@ -312,7 +312,8 @@ console.log(catalog.length);
 
 const container = document.getElementById('catalog');
 const maxColumns = 6; // Match this with the number of columns set in CSS
-const maxRows = 6;
+const maxRows = 4;
+
 
 if (container) {
     catalog.forEach(card => {
@@ -320,9 +321,10 @@ if (container) {
         // Assign random positions within the grid
         cardElement.style.gridColumnStart = getRandomInt(1, maxColumns);
         cardElement.style.gridRowStart = getRandomInt(1, maxRows);
-        cardElement.querySelector('.project-image').addEventListener('load', () => {
-            container.appendChild(cardElement);
-        });
+
+        cardElement.classList.add(card.nationality)
+
+        container.appendChild(cardElement)
     });
 
 } else {
@@ -331,51 +333,85 @@ if (container) {
 });
 
 
-    // Select project items
-    const cards = document.querySelectorAll(".project-item");
+// Select filter buttons
+const filterBtns = document.querySelector(".filters");
+const cards = document.getElementsByClassName('project-item');
+console.log(cards.length)
 
-    // Add data-categories attribute to project items based on nationality
-    cards.forEach(card => {
-        console.log(card);
-        const nationality = card.getAttribute("data-nationality");
-        card.setAttribute("data-categories", nationality);
-    });
+const filterFn = (event) => {
+    if(event.target.classList.contains('filter-btn')){
 
-    // Select filter buttons
-    const filterBtns = document.querySelectorAll(".filter-btn");
+        let active = filterBtns.querySelector('.active');
+        active.classList.remove('active');
 
-    // Add click event listener to each filter button
-    filterBtns.forEach(btn => {
-        btn.addEventListener("click", function () {
-            // Remove "active" class from all filter buttons
-            filterBtns.forEach(btn => btn.classList.remove("active"));
+        event.target.classList.add('active');
 
-            // Add "active" class to the clicked filter button
-            this.classList.add("active");
+        const filterValue = event.target.getAttribute("data-filter")
 
-            // Get the filter value from the data attribute
-            const filterValue = this.getAttribute("data-filter");
-            console.log(filterValue);
-
-            // Filter project items based on the selected category
-            // cards.forEach(card => {
-            //     console.log(card);
-            //     const categories = card.getAttribute("data-categories").split(" ");
-            //     console.log(categories);
-                // if (filterValue === "all" || categories.includes(filterValue)) {
-                //     card.style.display = "block";
-                // } else {
-                //     card.style.display = "none";
-                // }
-            // });
-            for (let i = 0; i < cards.length; i++) {  
-                if (cards[i].classList.contains(filterValue) || filterValue === "all") {
-                    cards[i].classList.remove("hide");
-                    cards[i].classList.add("show");
-                 }
+        for(let i = 0; i < cards.length; i++){
+            if(cards[i].classList.contains(filterValue) || filterValue === "all"){
+                console.log(cards[i].classList)
+                // cards[i].style.display = "none"
+                cards[i].classList.remove('hide')
+                cards[i].classList.add('show')
+            } else {
+                cards[i].classList.remove('show')
+                cards[i].classList.add('hide')
             }
-        });
-    });
+        }
+
+    }
+}
+
+
+filterBtns.addEventListener('click', filterFn)
+
+
+//     // Select project items
+//     const cards = document.querySelectorAll(".project-item");
+
+//     // Add data-categories attribute to project items based on nationality
+//     cards.forEach(card => {
+//         console.log(card);
+//         const nationality = card.getAttribute("data-nationality");
+//         card.setAttribute("data-categories", nationality);
+//     });
+
+//     // Select filter buttons
+//     const filterBtns = document.querySelectorAll(".filter-btn");
+
+//     // Add click event listener to each filter button
+//     filterBtns.forEach(btn => {
+//         btn.addEventListener("click", function () {
+//             // Remove "active" class from all filter buttons
+//             filterBtns.forEach(btn => btn.classList.remove("active"));
+
+//             // Add "active" class to the clicked filter button
+//             this.classList.add("active");
+
+//             // Get the filter value from the data attribute
+//             const filterValue = this.getAttribute("data-filter");
+//             console.log(filterValue);
+
+//             // Filter project items based on the selected category
+//             // cards.forEach(card => {
+//             //     console.log(card);
+//             //     const categories = card.getAttribute("data-categories").split(" ");
+//             //     console.log(categories);
+//                 // if (filterValue === "all" || categories.includes(filterValue)) {
+//                 //     card.style.display = "block";
+//                 // } else {
+//                 //     card.style.display = "none";
+//                 // }
+//             // });
+//             for (let i = 0; i < cards.length; i++) {  
+//                 if (cards[i].classList.contains(filterValue) || filterValue === "all") {
+//                     cards[i].classList.remove("hide");
+//                     cards[i].classList.add("show");
+//                  }
+//             }
+//         });
+//     });
 
 
 
@@ -384,24 +420,12 @@ function createCardElement (project) {
         const card = document.createElement("div");
         card.classList.add('project-item');
         card.setAttribute("data-nationality", project.nationality);
-        
-        // //add title
-        // let title = document.createElement("h4");
-        // title.textContent = project.name;
-        // card.appendChild(title);
      
         //add image 
         const image = document.createElement("img");
         image.classList.add('project-image');
         image.src = project.image;
         card.appendChild(image);
-        
-
-        // // add subtitle
-        // const subtitle = document.createElement("h6");
-        // subtitle.textContent = project.architect;
-        // card.appendChild(subtitle);
-
 
         return card;
 }
@@ -413,21 +437,46 @@ function getRandomInt(min, max) {
 
 
 
+//modal
 
-  // expand images with info
+document.addEventListener('DOMContentLoaded', () => {
 
-// var btn = document.getElementById('modalBtn');
-// var modal = document.querySelector('.wrapperEl');
-// var span = document.querySelector('.closeBtn');
-
-// btn.addEventListener('click', function(e){
-//   e.preventDefault();
+    const modal = document.getElementById('modal');
+    const closeModal = document.querySelector('.close');
+    const modalImage = document.getElementById('modal-image');
+    const modalName = document.getElementById('modal-name');
+    const modalArchitect = document.getElementById('modal-architect');
+    const modalNationality = document.getElementById('modal-nationality');
+    const modalYear = document.getElementById('modal-year');
   
-//   modal.style.display = "block";
-// });
-
-// span.addEventListener('click', function(e){
-//   e.preventDefault();
+    if (container) {
+      catalog.forEach(card => {
+        const cardElement = createCardElement(card);
+        cardElement.addEventListener('click', () => openModal(card));
+        container.appendChild(cardElement);
+      });
+    } else {
+      console.error("Container element not found!");
+    }
   
-//   modal.style.display = "none";
-// })
+    closeModal.addEventListener('click', () => closeModalFunction());
+    modal.addEventListener('click', (event) => {
+      if (event.target === modal) {
+        closeModalFunction();
+      }
+    });
+  
+    function openModal(card) {
+      modalImage.src = card.image;
+      modalName.textContent = card.name;
+      modalArchitect.textContent = `Architect: ${card.architect}`;
+      modalNationality.textContent = `Nationality: ${card.nationality}`;
+      modalYear.textContent = `Year: ${card.year}`;
+  
+      modal.style.display = 'flex';
+    }
+  
+    function closeModalFunction() {
+      modal.style.display = 'none';
+    }
+  });

@@ -84,19 +84,19 @@ h3 {
 .container {
     height: 100vh;
     width: 100%;
-  }
+}
   
-  .filters {
+.filters {
     background-color: rgb(232, 235, 211);
-    padding: 20px;
+    padding: 10px;
     /*   border: 2px solid #141414; */
     width: 100%;
-  }
+
+}
   
-  .filters {
-    height: 40vh;
-  }
-  
+.filters {
+    height: 20vh;
+}
   
   .filter-btn {
     color: rgb(232, 235, 211);
@@ -114,11 +114,12 @@ h3 {
   }
 
 .card.hide {
-    display: none;
+    opacity: 0;
   }
   
 .card.show {
-    animation: fadeIn 0.5s ease;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
   }
   
   /* @keyframes fadeIn {
@@ -137,7 +138,7 @@ h3 {
 #catalog {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: minmax(100px, auto); /* Minimum row height, but can grow */   
+    grid-auto-rows: minmax(200px, auto); /* Minimum row height, but can grow */   
     gap: 10px;
     background-color: rgb(232, 235, 211);
 }
@@ -152,8 +153,8 @@ h3 {
 }
 
 .project-image {
-    width: 100px; /* Take full width of the card */
-    height: 100px; 
+    width: 200px; /* Take full width of the card */
+    height: 200px; 
     /* object-fit: cover; */
     overflow: hidden; /* Hide overflow content */
 }
@@ -226,3 +227,55 @@ h8 {
     font-size: 20px;
     color: rgb(232, 235, 211);
 }
+
+
+
+/* Modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: rgb(232, 235, 211);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: rgb(41, 41, 218);
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    max-width: 100%;
+    max-height: 70vh;
+  }
+  
+  .modal-details {
+    margin-top: 20px;
+  }
+  
+  .modal-details h4 {
+    font-size: 1.5em;
+    color: rgb(41, 41, 218);
+  }
+  
+  .modal-details p {
+    font-size: 1em;
+    color: rgb(41, 41, 218);
+  }
