@@ -69,13 +69,33 @@ a {
 
 
 h1 {
-    font-size: 5em;
+    font-size: 4em;
     color: rgb(232, 235, 211);
 }
 
-h3 {
+h2 {
     font-size: 3em;
+    color:rgb(41,41,218);
+}
+
+h3 {
+    font-size: 2.5em;
     color: rgb(232, 235, 211);
+}
+
+h4 {
+    font-size: 2em;
+    color:rgb(41,41,218);
+}
+
+h5 {
+    font-size: 1em;
+    color:rgb(232, 235, 211);
+}
+
+h6 {
+    font-size: 1em;
+    color:rgb(41,41,218);
 }
 
 
@@ -89,7 +109,6 @@ h3 {
 .filters {
     background-color: rgb(232, 235, 211);
     padding: 10px;
-    /*   border: 2px solid #141414; */
     width: 100%;
 
 }
@@ -106,6 +125,7 @@ h3 {
     height: 30px;
     text-align: center;
     border: none;
+    cursor: pointer;
   }
   
   .filter-btn.active {
@@ -113,24 +133,6 @@ h3 {
     background: rgb(41,41,218);
   }
 
-.card.hide {
-    opacity: 0;
-  }
-  
-.card.show {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  /* @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  } */
-  
 
 /* main images body */
 
@@ -152,21 +154,20 @@ h3 {
     transition: transform 0.3s ease-in-out;
 }
 
+.project-item.hide {
+    display: none;
+}
+
+.project-item.show {
+    display: block;
+}
+
+
 .project-image {
-    width: 200px; /* Take full width of the card */
+    width: 200px; 
     height: 200px; 
-    /* object-fit: cover; */
-    overflow: hidden; /* Hide overflow content */
-}
-
-h4 {
-    font-size: 1em;
-    color:rgb(41,41,218);
-}
-
-h6 {
-    font-size: 0.5em;
-    color:rgb(41,41,218);
+    overflow: hidden; 
+    cursor: pointer;
 }
 
 img {
@@ -174,21 +175,11 @@ img {
 }
   
 
-/* .item--1 {
-    grid-column-start: 1;
-    grid-column-end: 2; 
-  
-    grid-row-start: 1;
-    grid-row-end: 2;
-}    */
-
-
 
 /* footer fixed */
 
 footer {
     height: 40px;
-    /* border: 2px solid red; */
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -206,11 +197,6 @@ footer {
     padding: 100px;
 }
 
-h7 {
-    font-size: 1em;
-    color: rgb(232, 235, 211);
-}
-
 
 
 /* about */
@@ -223,59 +209,40 @@ h7 {
     padding: 200px;
 }
 
-h8 {
-    font-size: 20px;
-    color: rgb(232, 235, 211);
-}
+
 
 
 
 /* Modal styles */
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    position: relative;
-    background-color: rgb(232, 235, 211);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-  }
-  
-  .close {
+.wrapperEl {
     position: absolute;
-    top: 10px;
+    display: none;
+    width: 100%;
+    top: 200vh;
+    left: 0;
+    z-index: 1;
+}
+
+.modalEl {
+    position: relative;
+    width: 50%;
+    height: 300px;
+    background-color: rgba(232, 235, 211, 0.942);
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0px;
     right: 10px;
-    font-size: 20px;
-    color: rgb(41, 41, 218);
     cursor: pointer;
-  }
-  
-  .modal-image {
-    max-width: 100%;
-    max-height: 70vh;
-  }
-  
-  .modal-details {
-    margin-top: 20px;
-  }
-  
-  .modal-details h4 {
-    font-size: 1.5em;
-    color: rgb(41, 41, 218);
-  }
-  
-  .modal-details p {
-    font-size: 1em;
-    color: rgb(41, 41, 218);
-  }
+}
+
+
+
+/* Responsive screen widths */
+

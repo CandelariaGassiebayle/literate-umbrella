@@ -311,29 +311,23 @@ const catalog = [
 console.log(catalog.length);
 
 const container = document.getElementById('catalog');
-const maxColumns = 6; // Match this with the number of columns set in CSS
+const maxColumns = 6; // Match to number of columns in CSS
 const maxRows = 4;
 
 
-if (container) {
-    catalog.forEach(card => {
-        const cardElement = createCardElement(card);
-        // Assign random positions within the grid
-        cardElement.style.gridColumnStart = getRandomInt(1, maxColumns);
-        cardElement.style.gridRowStart = getRandomInt(1, maxRows);
 
-        cardElement.classList.add(card.nationality)
+catalog.forEach(card => {
+    const cardElement = createCardElement(card);
+  
+    cardElement.style.gridColumnStart = getRandomInt(1, maxColumns);
+    cardElement.style.gridRowStart = getRandomInt(1, maxRows);
 
-        container.appendChild(cardElement)
-    });
-
-} else {
-    console.error("Container element not found!");
-}
+    container.appendChild(cardElement)
 });
 
 
-// Select filter buttons
+
+// FILTER
 const filterBtns = document.querySelector(".filters");
 const cards = document.getElementsByClassName('project-item');
 console.log(cards.length)
@@ -364,119 +358,67 @@ const filterFn = (event) => {
 }
 
 
-filterBtns.addEventListener('click', filterFn)
+    filterBtns.addEventListener('click', filterFn)
 
 
-//     // Select project items
-//     const cards = document.querySelectorAll(".project-item");
+    // MODAL
+    let modal = document.querySelector('.wrapperEl');
+    let span = document.querySelector('.closeBtn');
 
-//     // Add data-categories attribute to project items based on nationality
-//     cards.forEach(card => {
-//         console.log(card);
-//         const nationality = card.getAttribute("data-nationality");
-//         card.setAttribute("data-categories", nationality);
-//     });
+            container.addEventListener('click', function (event) {
+                if (event.target.classList.contains('project-image')) {
+                    const cardIndex = Array.from(container.children).indexOf(event.target.parentElement);
+            
+                    const selectedProject = catalog[cardIndex];
+            
+                    document.getElementById('modalTitle').innerText = selectedProject.name;
+                    document.getElementById('architectInfo').innerText = `Architect: ${selectedProject.architect}`;
+                    document.getElementById('nationalityInfo').innerText = `Nationality: ${selectedProject.nationality}`;
+                    document.getElementById('yearInfo').innerText = `Year: ${selectedProject.year}`;
+                    document.getElementById('locationInfo').innerText = `Location: ${selectedProject.location}`;
+                    document.getElementById('typeInfo').innerText = `Type: ${selectedProject.type}`;
 
-//     // Select filter buttons
-//     const filterBtns = document.querySelectorAll(".filter-btn");
+                    modal.style.display = "block";
+                }})
 
-//     // Add click event listener to each filter button
-//     filterBtns.forEach(btn => {
-//         btn.addEventListener("click", function () {
-//             // Remove "active" class from all filter buttons
-//             filterBtns.forEach(btn => btn.classList.remove("active"));
+    // Close modal function
+    const closeModal = () => {
+        modal.style.display = "none";
+    };
 
-//             // Add "active" class to the clicked filter button
-//             this.classList.add("active");
+    // Event listener for close button
+    span.addEventListener('click', closeModal);
 
-//             // Get the filter value from the data attribute
-//             const filterValue = this.getAttribute("data-filter");
-//             console.log(filterValue);
-
-//             // Filter project items based on the selected category
-//             // cards.forEach(card => {
-//             //     console.log(card);
-//             //     const categories = card.getAttribute("data-categories").split(" ");
-//             //     console.log(categories);
-//                 // if (filterValue === "all" || categories.includes(filterValue)) {
-//                 //     card.style.display = "block";
-//                 // } else {
-//                 //     card.style.display = "none";
-//                 // }
-//             // });
-//             for (let i = 0; i < cards.length; i++) {  
-//                 if (cards[i].classList.contains(filterValue) || filterValue === "all") {
-//                     cards[i].classList.remove("hide");
-//                     cards[i].classList.add("show");
-//                  }
-//             }
-//         });
-//     });
-
-
-
-function createCardElement (project) {
-        //create list item 
-        const card = document.createElement("div");
-        card.classList.add('project-item');
-        card.setAttribute("data-nationality", project.nationality);
-     
-        //add image 
-        const image = document.createElement("img");
-        image.classList.add('project-image');
-        image.src = project.image;
-        card.appendChild(image);
-
-        return card;
-}
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-
-
-
-
-//modal
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const modal = document.getElementById('modal');
-    const closeModal = document.querySelector('.close');
-    const modalImage = document.getElementById('modal-image');
-    const modalName = document.getElementById('modal-name');
-    const modalArchitect = document.getElementById('modal-architect');
-    const modalNationality = document.getElementById('modal-nationality');
-    const modalYear = document.getElementById('modal-year');
-  
-    if (container) {
-      catalog.forEach(card => {
-        const cardElement = createCardElement(card);
-        cardElement.addEventListener('click', () => openModal(card));
-        container.appendChild(cardElement);
-      });
-    } else {
-      console.error("Container element not found!");
-    }
-  
-    closeModal.addEventListener('click', () => closeModalFunction());
-    modal.addEventListener('click', (event) => {
-      if (event.target === modal) {
-        closeModalFunction();
-      }
+    // Event listener to close the modal when clicking outside the modal
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
     });
-  
-    function openModal(card) {
-      modalImage.src = card.image;
-      modalName.textContent = card.name;
-      modalArchitect.textContent = `Architect: ${card.architect}`;
-      modalNationality.textContent = `Nationality: ${card.nationality}`;
-      modalYear.textContent = `Year: ${card.year}`;
-  
-      modal.style.display = 'flex';
-    }
-  
-    function closeModalFunction() {
-      modal.style.display = 'none';
-    }
-  });
+
+});
+
+
+
+
+
+//IMAGE DISPLAY
+function createCardElement (project) {
+        const card = document.createElement("div");
+        card.classList.add('project-item', project.nationality);
+        card.setAttribute("data-nationality", project.nationality);
+                                
+        const image = document.createElement("img");
+                                    image.classList.add('project-image');
+                                    image.src = project.image;
+                                    card.appendChild(image);
+
+                                    return card;
+                            }
+                            function getRandomInt(min, max) {
+                                return Math.floor(Math.random() * (max - min + 1)) + min;
+                    }
+
+
+
+
