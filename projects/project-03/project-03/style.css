@@ -17,11 +17,13 @@ html{
 .title {
     background-color: rgb(41,41,218);
     height: 100vh;
+    width: 100%;
   }
 
 .transition {
     background: linear-gradient(rgb(41,41,218), rgb(232, 235, 211));
     height: 50vh;
+    width: 100%;
   }
 
 
@@ -143,6 +145,7 @@ h6 {
     grid-auto-rows: minmax(200px, auto); /* Minimum row height, but can grow */   
     gap: 10px;
     background-color: rgb(232, 235, 211);
+    width: 100%;
 }
 
 .project-item {
